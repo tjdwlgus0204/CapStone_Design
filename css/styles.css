@@ -1,0 +1,182 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #ffffff;
+    margin: 0;
+    padding: 0;
+ }
+ 
+ .container {
+    padding: 20px;
+ }
+ 
+ /* 헤더 스타일 */
+ header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #ffffff;
+ }
+ 
+ .header-left h1 {
+    color: #5373FF;
+    font-size: 36px;
+    margin: 0;
+ }
+ 
+ .profile-section {
+    margin-top: 40px;
+    width: 100%;
+    max-width: 500px;
+    margin: 0 auto;
+ }
+ 
+ h2 {
+    color: #5373FF;
+    text-align: center;
+ }
+ 
+ .form-group {
+    margin-bottom: 15px;
+ }
+ 
+ label {
+    display: block;
+    font-size: 16px;
+    margin-bottom: 5px;
+ }
+ 
+ input {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #cccccc;
+    font-size: 16px;
+ }
+ 
+ .save-button {
+    background-color: #5373FF;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    display: block;
+    width: 100%;
+    margin-top: 20px;
+    text-align: center;
+ }
+ 
+ .header-right {
+    display: flex;
+    align-items: center;
+ }
+ 
+ .my-study-button {
+    background-color: #5373FF;
+    color: white;
+    border: none;
+    border-radius: 20px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-right: 15px;
+ }
+ 
+ .profile-button {
+    background-color: #5373FF;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    padding: 10px;
+    font-size: 20px;
+    width: 45px; /* 버튼의 너비 */
+    height: 45px; /* 버튼의 높이 */
+    cursor: pointer;
+ }
+ 
+ #logo {
+    cursor: pointer; /* 마우스 포인터를 손가락 모양으로 변경 */
+ }
+ 
+ /* 검색창 스타일 */
+ .search-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px;
+ }
+ 
+ #search-input {
+    width: 350px;
+    padding: 10px;
+    border-radius: 20px;
+    border: 1px solid #5373FF;
+    font-size: 16px;
+    outline: none;
+ }
+ 
+ #search-button {
+    background-color: #5373FF;
+    border: none;
+    padding: 10px;
+    border-radius: 50%;
+    color: white;
+    cursor: pointer;
+    font-size: 18px;
+    margin-left: 10px;
+    width: 40px; /* 버튼의 너비 */
+    height: 40px; /* 버튼의 높이 */
+ }
+ 
+ /* 검색 결과 영역 */
+ #results-section {
+    margin-top: 30px;
+    text-align: left;
+ }
+ 
+ .group-card {
+    border: 1px solid #5373FF;
+    border-radius: 15px;
+    padding: 20px;
+    margin: 15px auto;
+    width: 80%;
+    background-color: #eff6fc;
+ }
+ 
+ .group-card h2 {
+    color: white;
+    background-color: #5373FF;
+    padding: 10px;
+    border-radius: 10px 10px 0 0;
+ }
+ 
+ .group-card p {
+    padding: 10px;
+    font-size: 16px;
+    color: #141414;
+ }
+ 
+ .keyword-container {
+    padding: 10px;
+    font-size: 14px;
+    color: #141414;
+ }
+ 
+ .keyword-container span {
+    background-color: #5373FF;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 15px;
+    margin-right: 5px;
+    display: inline-block;
+ }
+ 
+ .no-results {
+    text-align: center;
+    font-size: 18px;
+    color: #555;
+    margin-top: 20px;
+ }
+ 
