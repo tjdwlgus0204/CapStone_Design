@@ -61,28 +61,52 @@ header {
    background-color: #fff;
 }
 
-.banner {
-   background-color: #2d3748;
-   color: #f6ad55;
-   padding: 60px 20px 20px 20px; /* 아래쪽 패딩을 줄이고 버튼과 텍스트 간 간격을 조정합니다 */
-   border-radius: 20px;
-   text-align: left; /* 배너 내 텍스트 정렬을 왼쪽으로 변경 */
+.carousel {
    position: relative;
+   width: 100%;
+   overflow: hidden;
+   border-radius: 20px; /* 모서리를 둥글게 */
+ }
+ 
+ .slides {
+   display: flex;
+   transition: transform 0.5s ease;
+   width: 300%; /* 슬라이드 개수에 따라 설정 */
+ }
+ 
+ .slide {
+   flex: 1 0 100%;
+   width: 100%;
+   padding: 60px;
+   text-align: left;
+   background-color: #fdf2ec;
+   box-sizing: border-box;
+   /* slide의 모서리 자체를 둥글게 하고 싶다면 아래 코드 추가 */
+   border-radius: inherit; /* 부모의 border-radius와 동일하게 적용 */
+ }
+ 
+ 
+
+.carousel-indicators {
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 10px;
 }
 
-.notice-button {
-   display: inline-block; /* 버튼을 인라인 형태로 만들어 텍스트와 일관된 흐름을 가집니다 */
-   background-color: #f6ad55;
-   color: #fff;
-   border: none;
-   padding: 5px 10px; /* 버튼의 패딩을 줄여 크기를 줄입니다 */
-   border-radius: 5px; /* 모서리를 더 작게 둥글리기 */
-   font-size: 14px; /* 글꼴 크기 줄이기 */
-   font-weight: bold;
-   margin-bottom: 10px; /* 버튼 아래에 여백 추가 */
-   cursor: pointer;
+.indicator {
+  width: 10px;
+  height: 10px;
+  background-color: #ddd;
+  border-radius: 50%;
+  cursor: pointer;
 }
 
+.indicator.active {
+  background-color: #333;
+}
 
 .projects {
    display: flex;
@@ -151,4 +175,3 @@ header {
 .lounge-content {
    margin-top: 10px;
 }
-
